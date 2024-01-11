@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.1 on linux)" generated="20231220 15:03:42.853" rpa="false" schemaversion="4">
+<suite id="s1" name="pythonProject" source="/home/mrvito/Dev/qa_testing_robot/pythonProject">
+<suite id="s1-s1" name="Reddit" source="/home/mrvito/Dev/qa_testing_robot/pythonProject/reddit.robot">
+<test id="s1-s1-t1" name="Test Main Page" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.reddit.com/?rdt=60456</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231220 15:03:42.944" level="INFO">Opening browser 'Chrome' to base url 'https://www.reddit.com/?rdt=60456'.</msg>
+<msg timestamp="20231220 15:04:57.279" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20231220 15:04:57.279" level="FAIL">NoSuchDriverException: Message: Unable to obtain driver for chrome using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</msg>
+<status status="FAIL" starttime="20231220 15:03:42.944" endtime="20231220 15:04:57.281"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20231220 15:04:57.281" endtime="20231220 15:04:57.281"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@id="left-sidebar"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20231220 15:04:57.281" endtime="20231220 15:04:57.281"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="TOPICS"]/faceplate-expandable-section-helper[3]/details/summary/left-nav-topic-tracker/li/div/span[1]/span[2]/span[1]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231220 15:04:57.281" endtime="20231220 15:04:57.281"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@id="Business"]/ul/left-natopic-tracker[1]/li/a</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20231220 15:04:57.281" endtime="20231220 15:04:57.281"/>
+</kw>
+<status status="FAIL" starttime="20231220 15:03:42.943" endtime="20231220 15:04:57.281">NoSuchDriverException: Message: Unable to obtain driver for chrome using Selenium Manager.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+</status>
+</test>
+<status status="FAIL" starttime="20231220 15:03:42.865" endtime="20231220 15:04:57.282"/>
+</suite>
+<status status="FAIL" starttime="20231220 15:03:42.854" endtime="20231220 15:04:57.283"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="pythonProject">pythonProject</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Reddit">pythonProject.Reddit</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.1 on linux)" generated="20231220 12:39:25.857" rpa="false" schemaversion="4">
+<suite id="s1" name="pythonProject" source="/home/mrvito/Dev/qa_testing_robot/pythonProject">
+<suite id="s1-s1" name="Second" source="/home/mrvito/Dev/qa_testing_robot/pythonProject/second">
+<suite id="s1-s1-s1" name="Second" source="/home/mrvito/Dev/qa_testing_robot/pythonProject/second/second.robot">
+<test id="s1-s1-s1-t1" name="Test Hello World" line="2">
+<kw name="Log" library="BuiltIn">
+<arg>Hello World</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231220 12:39:25.871" level="INFO">Hello World</msg>
+<status status="PASS" starttime="20231220 12:39:25.871" endtime="20231220 12:39:25.871"/>
+</kw>
+<status status="PASS" starttime="20231220 12:39:25.871" endtime="20231220 12:39:25.871"/>
+</test>
+<test id="s1-s1-s1-t2" name="Test 2 Hello Itmo" line="4">
+<kw name="Log" library="BuiltIn">
+<arg>Hello</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231220 12:39:25.872" level="INFO">Hello</msg>
+<status status="PASS" starttime="20231220 12:39:25.872" endtime="20231220 12:39:25.872"/>
+</kw>
+<status status="PASS" starttime="20231220 12:39:25.872" endtime="20231220 12:39:25.872"/>
+</test>
+<status status="PASS" starttime="20231220 12:39:25.870" endtime="20231220 12:39:25.872"/>
+</suite>
+<status status="PASS" starttime="20231220 12:39:25.869" endtime="20231220 12:39:25.873"/>
+</suite>
+<status status="PASS" starttime="20231220 12:39:25.858" endtime="20231220 12:39:25.873"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="pythonProject">pythonProject</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Second">pythonProject.Second</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1-s1" name="Second">pythonProject.Second.Second</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
